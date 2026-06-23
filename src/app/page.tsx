@@ -5,16 +5,8 @@ import {
   getProductBySlug,
 } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
-import ConfettiRain from "@/components/ConfettiRain";
 import PinataIcon from "@/components/PinataIcon";
-
-const MARQUEE_ITEMS = [
-  "HANDMADE",
-  "REUSABLE",
-  "MADE TO ORDER",
-  "PULL THE RIBBONS",
-  "SHIPS NATIONWIDE",
-];
+import PinataUnravelHero from "@/components/PinataUnravelHero";
 
 export default function Home() {
   const halloween = getProductsByCategory("halloween");
@@ -28,48 +20,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-midway-gradient text-white">
-        <ConfettiRain />
-        <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-20 text-center sm:px-6 sm:py-28">
-          <span className="animate-rise rounded-full border border-[var(--color-gold)] px-4 py-1 text-xs font-bold uppercase tracking-widest text-[var(--color-gold-bright)]">
-            Patent Pending Spin Design
-          </span>
-          <h1 className="animate-rise mt-6 font-display text-4xl leading-tight sm:text-6xl md:text-7xl">
-            SPIN. PULL.
-            <br />
-            REPEAT.
-          </h1>
-          <p className="animate-rise mt-5 max-w-xl text-base text-white/85 sm:text-lg">
-            Handcrafted spin piñatas built to be pulled, spun, and reused
-            party after party — pick your colors and watch the tornado of
-            confetti fly.
-          </p>
-          <div className="animate-rise mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/shop"
-              className="cursor-pointer rounded-full bg-[var(--color-gold)] px-7 py-4 font-bold text-[var(--color-ink)] transition-colors hover:bg-[var(--color-gold-bright)]"
-            >
-              Shop All Piñatas
-            </Link>
-            <Link
-              href="/shop?category=custom"
-              className="cursor-pointer rounded-full border-2 border-white/70 px-7 py-4 font-bold transition-colors hover:bg-white/10"
-            >
-              Build a Custom Piñata
-            </Link>
-          </div>
-        </div>
-
-        <div className="caution-stripe relative flex h-12 items-center overflow-hidden">
-          <div className="animate-marquee flex shrink-0 gap-8 whitespace-nowrap px-4 text-sm font-bold uppercase tracking-widest text-[var(--color-ink)]">
-            {Array.from({ length: 3 }).flatMap((_, set) =>
-              MARQUEE_ITEMS.map((item, i) => (
-                <span key={`${set}-${i}`}>{item} •</span>
-              ))
-            )}
-          </div>
-        </div>
-      </section>
+      <PinataUnravelHero />
 
       {/* Halloween seasonal block */}
       <section className="bg-[var(--color-ink)] text-white">
