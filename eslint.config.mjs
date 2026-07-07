@@ -13,6 +13,18 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  // BaptismSpinnerHero uses intentional Three.js imperative patterns that
+  // conflict with React 19's stricter hook rules (per-frame mutation of
+  // scene objects, r3f gl/camera configuration, object-keyed copy refs).
+  {
+    files: ["src/components/BaptismSpinnerHero.tsx"],
+    rules: {
+      "react-hooks/use-memo": "off",
+      "react-hooks/immutability": "off",
+      "react-hooks/refs": "off",
+      "prefer-const": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

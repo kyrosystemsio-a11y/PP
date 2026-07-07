@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bungee, Plus_Jakarta_Sans } from "next/font/google";
+import { Bungee, Plus_Jakarta_Sans, Cormorant_Garamond, Outfit } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/lib/cart-context";
 import Navbar from "@/components/Navbar";
@@ -14,6 +14,20 @@ const bungee = Bungee({
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
   subsets: ["latin"],
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  weight: ["500", "600"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  weight: ["300", "400", "500"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +46,7 @@ export default function RootLayout({
       lang="en"
       className={`${bungee.variable} ${jakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-kraft-texture text-[var(--color-ink)]">
+      <body className={`${cormorant.variable} ${outfit.variable} min-h-full flex flex-col bg-kraft-texture text-[var(--color-ink)]`}>
         <CartProvider>
           <Navbar />
           <main className="flex-1">{children}</main>
