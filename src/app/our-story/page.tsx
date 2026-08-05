@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PinataIcon from "@/components/PinataIcon";
 
 export const metadata: Metadata = {
-  title: "Our Story | Spinner Piñata",
+  title: "Our Story | Spinner Piñata®",
   description:
-    "How Spinner Piñata reinvented the piñata with a reusable spin-and-pull design, hand-built one ribbon at a time.",
+    "How Spinner Piñata® reinvented the piñata with a reusable spin-and-pull design, hand-built one ribbon at a time.",
 };
 
 export default function OurStoryPage() {
@@ -19,7 +20,7 @@ export default function OurStoryPage() {
 
       <div className="mt-10 flex flex-col gap-6 leading-relaxed text-black/80">
         <p>
-          Spinner Piñata started with a simple problem: a piñata is over the
+          Spinner Piñata® started with a simple problem: a piñata is over the
           second the candy hits the ground. One swing, one smash, and the
           centerpiece of the party becomes confetti and cardboard on the
           floor.
@@ -42,9 +43,19 @@ export default function OurStoryPage() {
         <p>
           Our spin mechanism is patent pending — there&apos;s nothing else
           quite like it. And because it&apos;s built to be pulled and spun
-          rather than smashed once, a Spinner Piñata can come back for
+          rather than smashed once, a Spinner Piñata® can come back for
           birthday after birthday.
         </p>
+      </div>
+
+      <div className="relative mt-10 aspect-square overflow-hidden rounded-2xl">
+        <Image
+          src="/products/baptism.jpg"
+          alt="Spinner Piñata® Baptism edition"
+          fill
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="object-cover"
+        />
       </div>
     </div>
   );

@@ -17,12 +17,12 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 md:flex-row md:justify-between">
         <div className="max-w-sm">
           <p className="font-display text-xl text-[var(--color-gold-bright)]">
-            SPINNER PIÑATA
+            SPINNER PIÑATA®
           </p>
           <p className="mt-3 text-sm leading-relaxed text-white/70">
             Handmade spin-and-pull piñatas built to be reused, not just
             smashed once. Pick your colors, pull the ribbons, and let the
-            tornado of confetti fly.
+            tornado of candy fly.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/50 sm:px-6">
-        © {new Date().getFullYear()} Spinner Piñata. All rights reserved.
+        © {new Date().getFullYear()} Spinner Piñata®. All rights reserved.
       </div>
     </footer>
   );

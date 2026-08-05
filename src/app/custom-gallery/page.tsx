@@ -4,8 +4,8 @@ import { getProductsByCategory } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 
 export const metadata: Metadata = {
-  title: "Custom Gallery | Spinner Piñata",
-  description: "A look at our custom-built Spinner Piñatas — your colors, your theme.",
+  title: "Custom Gallery | Spinner Piñata®",
+  description: "A look at our custom-built Spinner Piñata®s — your colors, your theme.",
 };
 
 export default function CustomGalleryPage() {

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How It Works | Spinner Piñata",
+  title: "How It Works | Spinner Piñata®",
   description:
-    "How to hang, spin, and pull your Spinner Piñata for the best party reveal.",
+    "How to hang, spin, and pull your Spinner Piñata® for the best party reveal.",
 };
 
 const STEPS = [
@@ -17,7 +17,7 @@ const STEPS = [
   },
   {
     title: "Spin It Up",
-    copy: "Give the body a gentle spin to get the tornado motion going — this is what sets a Spinner Piñata apart from a traditional one.",
+    copy: "Give the body a gentle spin to get the tornado motion going — this is what sets a Spinner Piñata® apart from a traditional one.",
   },
   {
     title: "Pull the Ribbons",
@@ -25,7 +25,7 @@ const STEPS = [
   },
   {
     title: "Reuse It",
-    copy: "Once it's empty, just restock it. Because nothing gets smashed, your Spinner Piñata is ready for the next party right away.",
+    copy: "Once it's empty, just restock it. Because nothing gets smashed, your Spinner Piñata® is ready for the next party right away.",
   },
 ];
 

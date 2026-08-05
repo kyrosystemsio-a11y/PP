@@ -54,6 +54,9 @@ export const RIBBON_COLORS = [
 ] as const;
 
 export const PRODUCTS: Product[] = [
+  // Baptism
+  { slug: "baptism", name: "Spinata BAPTISM (\"Bolo\")", price: 67.99, category: "baptism", image: "/products/baptism.jpg", swatch: "#7fc3e8", description: "A one-of-a-kind baptism edition, hand-finished in soft blues and whites for the occasion." },
+
   // Custom Builds
   {
     slug: "custom-build-glow",
@@ -65,7 +68,7 @@ export const PRODUCTS: Product[] = [
     customizable: true,
     isAnimatedGlow: true,
     description:
-      "Your choice of ribbon color and a photo upload of your desired theme or character, hand-built with mini LED lights woven through the rip cords. Allow 2–3 extra days to complete your custom-build Spinner Pinata.",
+      "Your choice of ribbon color and a photo upload of your desired theme or character, hand-built with mini LED lights woven through the rip cords. Allow 2–3 extra days to complete your custom-build Spinner Pinata®.",
   },
   {
     slug: "custom-build-regular",
@@ -76,11 +79,11 @@ export const PRODUCTS: Product[] = [
     swatch: "#b5472b",
     customizable: true,
     description:
-      "Your choice of ribbon color. Upload a photo of your desired theme or character. Allow 2–3 extra days added to complete your custom-build Spinner Pinata.",
+      "Your choice of ribbon color. Upload a photo of your desired theme or character. Allow 2–3 extra days added to complete your custom-build Spinner Pinata®.",
   },
 
   // Colors Collection — $59.99
-  { slug: "spinata-blue", name: "Spinata Blue", price: 59.99, category: "colors", image: "/products/blue.jpg", swatch: "#2459c7", description: "A bold cobalt blue Spinner Pinata, hand-wrapped and ready to spin." },
+  { slug: "spinata-blue", name: "Spinata Blue", price: 59.99, category: "colors", image: "/products/blue.jpg", swatch: "#2459c7", description: "A bold cobalt blue Spinner Pinata®, hand-wrapped and ready to spin." },
   { slug: "spinata-red", name: "Spinata Red", price: 59.99, category: "colors", image: "/products/red.jpg", swatch: "#d11f2c", description: "Classic fiesta red — the color that started it all." },
   { slug: "spinata-white", name: "Spinata White", price: 59.99, category: "colors", image: "/products/white.jpg", swatch: "#f5f3ee", description: "Crisp, clean white — a blank canvas for any party theme." },
   { slug: "spinata-pink", name: "Spinata Pink", price: 59.99, category: "colors", image: "/products/pink.jpg", swatch: "#f3a0c2", description: "Soft bubblegum pink, perfect for birthdays and showers." },
@@ -96,8 +99,8 @@ export const PRODUCTS: Product[] = [
   { slug: "spinata-purple", name: "Spinata Purple", price: 59.99, category: "colors", image: "/products/purple.jpg", swatch: "#6d2f9e", description: "Royal purple — our signature midway color." },
   { slug: "spinata-lime", name: "Spinata Lime", price: 59.99, category: "colors", image: "/products/lime.jpg", swatch: "#b6d92f", description: "Electric lime for a high-energy party." },
   { slug: "spinata-light-blue", name: "Spinata Light Blue", price: 59.99, category: "colors", image: "/products/light-blue.jpg", swatch: "#7fc3e8", description: "Soft sky blue, calm and breezy." },
-  { slug: "spinata-mocha", name: "Spinata Brown (Mocha)", price: 59.99, category: "colors", image: "/products/brown.jpg", swatch: "#6b4327", description: "Warm mocha brown with a kraft-paper feel." },
-  { slug: "ivory", name: "Spinata Ivory", price: 59.99, category: "colors", image: "/products/ivory.webp", swatch: "#efe6d3", description: "Elegant ivory, a favorite for weddings." },
+  { slug: "spinata-mocha", name: "Spinata Brown (Mocha)", price: 59.99, category: "colors", image: "/products/brown.jpg", swatch: "#895129", description: "Warm mocha brown with a kraft-paper feel." },
+  { slug: "ivory", name: "Spinata Ivory", price: 59.99, category: "colors", image: "/products/ivory.webp", swatch: "#fffff0", description: "Elegant ivory, a favorite for weddings." },
 
   // Design Collection
   { slug: "dia-de-los-muertos", name: "Spinata DIA DE LOS MUERTOS", price: 65.99, category: "design", image: "/products/dia-de-los-muertos.jpg", swatch: "#3a0a5e", description: "Hand-decorated with vibrant sugar-skull medallions on ivory satin — a tribute piece for Día de los Muertos." },
@@ -113,9 +116,8 @@ export const PRODUCTS: Product[] = [
 
   // Specialty
   { slug: "glow", name: "Spinata GLOW", price: 79.99, category: "glow", image: null, swatch: "#3a0a5e", isAnimatedGlow: true, description: "Now with mini LED lights woven through every rip cord — spins and glows in the dark." },
-  { slug: "baptism", name: "Spinata BAPTISM (\"Bolo\")", price: 67.99, category: "baptism", image: "/products/baptism.jpg", swatch: "#7fc3e8", description: "A one-of-a-kind baptism edition, hand-finished in soft blues and whites for the occasion." },
   { slug: "luis-loera-collab", name: "Luis LOERA Collaboration", price: 67.99, category: "influencers", image: null, swatch: "#e8722e", description: "Our influencer collaboration build with Luis Loera — limited run." },
-  { slug: "t-shirt", name: "Spinner Pinata T-Shirt", price: 20.00, category: "merch", image: "/products/t-shirt.jpg", swatch: "#18101f", description: "Soft cotton tee with the Spinner Pinata logo. Wear the tornado." },
+  { slug: "t-shirt", name: "Spinner Pinata® T-Shirt", price: 20.00, category: "merch", image: "/products/t-shirt.jpg", swatch: "#18101f", description: "Soft cotton tee with the Spinner Pinata® logo. Wear the tornado." },
 ];
 
 export function getProductsByCategory(category: Category | "all"): Product[] {

@@ -31,7 +31,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Spinner Pinata | Handmade Spin & Pull Pinatas",
+  title: "Spinner Pinata® | Handmade Spin & Pull Pinatas",
   description:
     "Reusable, handcrafted spin pinatas for birthdays, baptisms, and every fiesta. Pick your colors, pull the ribbons, and watch it spin.",
 };

@@ -19,7 +19,7 @@ export async function generateMetadata({
   const product = getProductBySlug(slug);
   if (!product) return {};
   return {
-    title: `${product.name} | Spinner Piñata`,
+    title: `${product.name} | Spinner Piñata®`,
     description: product.description,
   };
 }

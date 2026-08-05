@@ -4,9 +4,9 @@ import ProductCard from "@/components/ProductCard";
 import CategoryFilter from "@/components/CategoryFilter";
 
 export const metadata: Metadata = {
-  title: "Shop All Spin Piñatas | Spinner Piñata",
+  title: "Shop All Spin Piñatas | Spinner Piñata®",
   description:
-    "Browse the full Spinner Piñata catalog — colors, designs, Halloween, glow, baptism, and custom builds.",
+    "Browse the full Spinner Piñata® catalog — colors, designs, Halloween, glow, baptism, and custom builds.",
 };
 
 const VALID_CATEGORIES: Category[] = [
@@ -40,7 +40,7 @@ export default async function ShopPage({
         Shop All Piñatas
       </h1>
       <p className="mt-2 max-w-2xl text-black/70">
-        Every Spinner Piñata is hand-built to be pulled, spun, and reused
+        Every Spinner Piñata® is hand-built to be pulled, spun, and reused
         party after party.
       </p>
 

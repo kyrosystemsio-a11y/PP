@@ -25,7 +25,7 @@ export default function Navbar() {
           href="/"
           className="font-display text-xl tracking-wide text-[var(--color-gold-bright)] sm:text-2xl"
         >
-          SPINNER PIÑATA
+          SPINNER PIÑATA®
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-semibold lg:flex">
