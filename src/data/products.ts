@@ -83,10 +83,10 @@ export const PRODUCTS: Product[] = [
   },
 
   // Colors Collection — $59.99
-  { slug: "spinata-blue", name: "Spinata Blue", price: 59.99, category: "colors", image: "/products/blue.jpg", swatch: "#2459c7", description: "A bold cobalt blue Spinner Pinata®, hand-wrapped and ready to spin." },
-  { slug: "spinata-red", name: "Spinata Red", price: 59.99, category: "colors", image: "/products/red.jpg", swatch: "#d11f2c", description: "Classic fiesta red — the color that started it all." },
-  { slug: "spinata-white", name: "Spinata White", price: 59.99, category: "colors", image: "/products/white.jpg", swatch: "#f5f3ee", description: "Crisp, clean white — a blank canvas for any party theme." },
-  { slug: "spinata-pink", name: "Spinata Pink", price: 59.99, category: "colors", image: "/products/pink.jpg", swatch: "#f3a0c2", description: "Soft bubblegum pink, perfect for birthdays and showers." },
+  { slug: "spinata-blue", name: "Spinata Blue", price: 59.99, category: "colors", image: "/products/blue.jpg", swatch: "#2563ec", description: "A bold cobalt blue Spinner Pinata®, hand-wrapped and ready to spin." },
+  { slug: "spinata-red", name: "Spinata Red", price: 59.99, category: "colors", image: "/products/red.jpg", swatch: "#dd2626", description: "Classic fiesta red — the color that started it all." },
+  { slug: "spinata-white", name: "Spinata White", price: 59.99, category: "colors", image: "/products/white.jpg", swatch: "#f6f6f1", description: "Crisp, clean white — a blank canvas for any party theme." },
+  { slug: "spinata-pink", name: "Spinata Pink", price: 59.99, category: "colors", image: "/products/pink.jpg", swatch: "#f572b6", description: "Soft bubblegum pink, perfect for birthdays and showers." },
   { slug: "spinata-green", name: "Spinata Green", price: 59.99, category: "colors", image: "/products/green.jpg", swatch: "#1f8a4c", description: "Rich forest green with a satin ribbon finish." },
   { slug: "spinata-orange", name: "Spinata Orange", price: 59.99, category: "colors", image: "/products/orange.jpg", swatch: "#e8722e", description: "Sun-bright orange, a fiesta favorite." },
   { slug: "spinata-yellow", name: "Spinata Yellow", price: 59.99, category: "colors", image: "/products/yellow.jpg", swatch: "#f3c61a", description: "Sunshine yellow — cheerful and impossible to miss." },
@@ -115,7 +115,7 @@ export const PRODUCTS: Product[] = [
   { slug: "white-halloween", name: "Spinata WHITE HALLOWEEN", price: 65.99, category: "halloween", image: "/products/white-halloween.jpg", swatch: "#f5f3ee", description: "Pumpkin medallions on ghost-white satin for a friendlier kind of spooky." },
 
   // Specialty
-  { slug: "glow", name: "Spinata GLOW", price: 79.99, category: "glow", image: null, swatch: "#3a0a5e", isAnimatedGlow: true, description: "Now with mini LED lights woven through every rip cord — spins and glows in the dark." },
+  { slug: "glow", name: "Spinata GLOW", price: 79.99, category: "glow", image: "/products/glow.jpg", swatch: "#e8fb5c", isAnimatedGlow: true, description: "Now with mini LED lights woven through every rip cord — spins and glows in the dark." },
   { slug: "luis-loera-collab", name: "Luis LOERA Collaboration", price: 67.99, category: "influencers", image: null, swatch: "#e8722e", description: "Our influencer collaboration build with Luis Loera — limited run." },
   { slug: "t-shirt", name: "Spinner Pinata® T-Shirt", price: 20.00, category: "merch", image: "/products/t-shirt.jpg", swatch: "#18101f", description: "Soft cotton tee with the Spinner Pinata® logo. Wear the tornado." },
 ];
